@@ -37,12 +37,6 @@ import '@fontsource-variable/onest'
     <meta name="google-site-verification" content="qUjvbSPzhUnPdufHo-s4CYvp8GXwgVtTbpjJrGWLUjc" />
     <HeadHrefLangs />
     <link rel="stylesheet" href="/styles/theme-toggler.css" />
-    <script>
-      import { initCSSRuntime } from '@master/css-runtime'
-      import config from '../../master.css'
-
-      initCSSRuntime(config)
-    </script>
   </head>
   <body class="flex rel ai:center bg:gray-5 bg:gray-95@dark flex:col min-h:100vh">
     <Header />
@@ -55,29 +49,29 @@ import '@fontsource-variable/onest'
 </html>
 
 <style is:global>
-@import '@master/normal.css';
+  @import "tailwindcss";
 
-:root {
-  --nav-offset-top: 362px;
-}
-html {
-  font-family: 'Onest Variable', sans-serif;
-  scroll-behavior: smooth;
-  scroll-padding-top: 120px;
-}
-html.dark {
-  color-scheme: dark;
-}
-@keyframes scale-down {
-  from {
-    scale: 3.7037; /* final size / initial size */
-    transform-origin: top left;
-    translate: 0 -305.55px;
+  :root {
+    --nav-offset-top: 362px;
   }
-}
-@keyframes opacity-down {
-  to {
-    opacity: 0;
+  html {
+    font-family: 'Onest Variable', sans-serif;
+    scroll-behavior: smooth;
+    scroll-padding-top: 120px;
   }
-}
+  html.dark {
+    color-scheme: dark;
+  }
+  @keyframes scale-down {
+    from {
+      scale: 3.7037; /* final size / initial size */
+      transform-origin: top left;
+      translate: 0 -305.55px;
+    }
+  }
+  @keyframes opacity-down {
+    to {
+      opacity: 0;
+    }
+  }
 </style>

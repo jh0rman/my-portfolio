@@ -10,9 +10,10 @@
   },
   "dependencies": {
     "@fontsource-variable/onest": "^5.1.1",
-    "@master/css-runtime": "rc",
+    "@tailwindcss/vite": "^4.0.0-beta.8",
     "astro": "^5.1.1",
-    "astro-i18next": "^1.0.0-beta.21"
+    "astro-i18next": "^1.0.0-beta.21",
+    "tailwindcss": "^4.0.0-beta.8"
   },
   "devDependencies": {
     "@types/bun": "latest"
